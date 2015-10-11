@@ -75,5 +75,54 @@ def verify_data(data, known_checksum):
     """
     return NotImplemented
         
+def load_parsed_data(fname):
+    """
+    Load fmri data in .nii and parse into a numpy array
 
+    Parameters
+    ----------
+    fname : str
+        Path to an .nii file containing fmri data
+    
+    Returns
+    -------
+    img_ary : numpy.core.memmap.memmap
+        Parsed data will be stored in a numpy container
 
+    Hint
+    ----
+    Use nibabel
+    """
+    return NotImplemented
+
+def main(data.json):
+    """
+    This function will be run if data_acquisition.py is called as a script. It
+    is intended to be used with the %run method in ipython to initialize a
+    session for data analysis
+
+    This function should load a filename, url, and verified checksum from a 
+    json archive. It will then check if a file with the given name already 
+    exists in ../data. If not, download the data from the given url, save it
+    to ../data/<filename>. Then verify the data. If the data verification
+    passes, the data should be parsed into a useful numpy format.
+
+    Parameters
+    ----------
+    data.json : str
+        Path to a json file containing at least 'name', 'url', and 'sha1'
+        fields
+
+    Returns
+    -------
+    data : numpy.core.memmap.memmap
+        The fMRI data in a numpy memmap representation, ready for analysis
+
+    Hint
+    ----
+    Use the functions you've implemented above
+    """
+    return NotImplemented
+
+### Add lines here that guarantees main() is run with example_data.json when
+### called as a script

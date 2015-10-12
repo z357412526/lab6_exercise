@@ -29,7 +29,7 @@ two remotes, one pointing to your fork and another pointing to your
 collaboration host's fork (you don't need to have a remote pointing to the 
 original berkeley-stat159 repo for the exercise).
 
-## Tasks
+## Primary Tasks
 
  - [ ] Add a `data` directory to the project. Create a `.gitignore` and add the
        `data` directory to it so any data files stored in that directory will
@@ -45,3 +45,23 @@ original berkeley-stat159 repo for the exercise).
  - [ ] Practice code review via pull requests. Make sure that your 
        implementations run on every group memeber's system (cross-platform
        compatibility is important)
+
+## Secondary Tasks
+
+If you manage to implement and review all of the functions in 
+`src/data_acquisition.py`, then move on to the in class example on 
+[hemodynamic response functions](http://www.jarrodmillman.com/rcsds/lectures/convolution_background.html).
+
+Start by using your `data_acquisition` module to download and save the 
+necessary modules to your `src/` directiory. You might start by downloading the
+[stimuli.py](http://www.jarrodmillman.com/rcsds/_downloads/stimuli.py)and
+[pearson.py](http://www.jarrodmillman.com/rcsds/_downloads/pearson_solutions.py)
+modules. You will also need to download the 
+[condition file](http://www.jarrodmillman.com/rcsds/_downloads/ds114_sub009_t2r1_cond.txt)
+to your `data/` directory.
+
+Once you have all the tools you need, collaborate with your group to follow the
+[convolution lecture](http://www.jarrodmillman.com/rcsds/lectures/convolution_background.html)
+and create an HRF. Having constructed the HRF, apply the pearson correlation
+analysis using the HRF as the correlate rather than the binary task on/off
+condition.

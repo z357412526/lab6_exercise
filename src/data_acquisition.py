@@ -49,7 +49,8 @@ def save_data(data, output_filename):
     ----
     Check out the os module for determining whether a file exists already.
     """
-    return NotImplemented
+
+    return '2'
 
 def verify_data(data, known_checksum):
     """
